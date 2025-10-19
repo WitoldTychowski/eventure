@@ -1,94 +1,104 @@
-# 10x Astro Starter
+# Eventure
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+A mobile-first web application for discovering local and free events in your city. Browse a paginated and infinite-scroll list or explore events on an interactive map, filter by type and price, view full details, and enjoy automatic geolocation with manual fallback.
+
+## Table of Contents
+
+- [Eventure](#eventure)
+  - [Table of Contents](#table-of-contents)
+  - [Tech Stack](#tech-stack)
+  - [Getting Started Locally](#getting-started-locally)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+  - [Available Scripts](#available-scripts)
+  - [Project Scope](#project-scope)
+    - [In Scope (MVP)](#in-scope-mvp)
+    - [Out of Scope (MVP)](#out-of-scope-mvp)
+  - [Project Status](#project-status)
+  - [License](#license)
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) v5.5.5 - Modern web framework for building fast, content-focused websites
-- [React](https://react.dev/) v19.0.0 - UI library for building interactive components
-- [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+- **Frontend**  
+  - Astro 5  
+  - React 19  
+  - TypeScript 5  
+  - Tailwind 4  
+  - Shadcn/ui  
+- **Backend**  
+  - Supabase (PostgreSQL, SDK, built-in auth)  
+- **CI/CD & Hosting**  
+  - GitHub Actions  
+  - Docker on DigitalOcean  
 
-## Prerequisites
+## Getting Started Locally
 
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+### Prerequisites
 
-## Getting Started
+- Node.js v22.14.0 (use [nvm](https://github.com/nvm-sh/nvm): `nvm install && nvm use`)  
+- npm or yarn  
+- A Supabase project with `SUPABASE_URL` and `SUPABASE_KEY`  
+- An OpenRouter API key (`OPENROUTER_API_KEY`)  
 
-1. Clone the repository:
+### Setup
 
 ```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
+# Clone the repo
+git clone https://github.com/WitoldTychowski/eventure.git
+cd eventure
 
-2. Install dependencies:
+# Use correct Node version
+nvm install
+nvm use
 
-```bash
+# Install dependencies
 npm install
-```
 
-3. Run the development server:
+# Create a .env file in the project root:
+# SUPABASE_URL=your_supabase_url
+# SUPABASE_KEY=your_supabase_key
+# OPENROUTER_API_KEY=your_openrouter_api_key
 
-```bash
+# Start development server
 npm run dev
 ```
 
-4. Build for production:
-
-```bash
-npm run build
-```
+The app will be available at `http://localhost:3000` by default.
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
+- `npm run dev` – Start Astro dev server  
+- `npm run build` – Build for production  
+- `npm run preview` – Preview production build  
+- `npm run astro` – Run Astro CLI  
+- `npm run lint` – Run ESLint  
+- `npm run lint:fix` – Fix lint errors  
+- `npm run format` – Run Prettier  
 
-## Project Structure
+## Project Scope
 
-```md
-.
-├── src/
-│   ├── layouts/    # Astro layouts
-│   ├── pages/      # Astro pages
-│   │   └── api/    # API endpoints
-│   ├── components/ # UI components (Astro & React)
-│   └── assets/     # Static assets
-├── public/         # Public assets
-```
+### In Scope (MVP)
 
-## AI Development Support
+- Infinite-scroll list of events (20 per load)  
+- Map view with event markers (latitude, longitude, address)  
+- Filters by event type (culture, sport, education, entertainment) and price (free vs paid)  
+- Event details: name, rich HTML description with images, address, GPS coordinates, source link  
+- Automatic geolocation with manual fallback (text input or city dropdown)  
+- Error handling  
+  - Empty-state UI with filter suggestions  
+  - API error banner with “Refresh” button  
 
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
+### Out of Scope (MVP)
 
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
+- Reservations or ticket purchases  
+- User accounts, registration, or login  
+- Push notifications  
+- Payment processing  
 
-### Cursor IDE
+## Project Status
 
-The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
-
-### GitHub Copilot
-
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
+Currently in **MVP development**.
 
 ## License
 
-MIT
+This project is released under the [MIT License](LICENSE)  
