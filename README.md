@@ -1,6 +1,6 @@
 # Eventure
 
-A mobile-first web application for discovering local and free events in your city. Browse a paginated and infinite-scroll list or explore events on an interactive map, filter by type and price, view full details, and enjoy automatic geolocation with manual fallback.
+A mobile-first web application for discovering local events in your city. Browse a paginated and infinite-scroll list, filter by type and price, view full details, and enjoy automatic geolocation.
 
 ## Table of Contents
 
