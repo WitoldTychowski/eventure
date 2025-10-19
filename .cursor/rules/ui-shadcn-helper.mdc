@@ -1,5 +1,5 @@
 ---
-description: 
+description: "Usage and styling guidelines for Shadcn UI components integration."
 globs: 
 alwaysApply: false
 ---
@@ -97,3 +97,4 @@ Niektóre popularne komponenty to:
 ## Component Styling
 
 Ten projekt wykorzystuje wariant stylu „new-york” z kolorem bazowym "neutral" i zmiennymi CSS do tworzenia motywów, zgodnie z konfiguracją w sekcji `components.json`.
+

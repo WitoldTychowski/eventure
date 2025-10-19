@@ -1,5 +1,5 @@
 ---
-description: 
+description: "Guidelines for Astro and React frontend styling, accessibility, and components."
 globs: *.tsx,*.astro
 alwaysApply: false
 ---

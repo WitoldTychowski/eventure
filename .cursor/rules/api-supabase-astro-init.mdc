@@ -1,5 +1,5 @@
 ---
-description: 
+description: "Guide to initialize Supabase client and middleware in Astro project."
 globs: 
 alwaysApply: false
 ---

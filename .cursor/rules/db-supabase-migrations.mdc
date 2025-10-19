@@ -1,5 +1,5 @@
 ---
-description: 
+description: "Standards for creating secure, well-documented Supabase database migrations."
 globs: 
 alwaysApply: false
 ---

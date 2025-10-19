@@ -1,5 +1,5 @@
 ---
-description: 
+description: "Best practices and guidelines for building Astro components and routes."
 globs: *.astro
 alwaysApply: false
 ---

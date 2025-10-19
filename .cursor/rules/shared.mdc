@@ -1,11 +1,11 @@
 ---
-description: 
+description: "Global project rules: tech stack, structure, and clean code guidelines."
 globs: 
 alwaysApply: true
 ---
-# AI Rules for {app-name}
+# AI Rules for eventure
 
-{project-description}
+A mobile-first web application for discovering local events in your city.
 
 ## Tech Stack
 

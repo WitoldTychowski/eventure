@@ -1,5 +1,5 @@
 ---
-description: 
+description: "React best practices with hooks, memoization, and performance optimizations."
 globs: *.tsx
 alwaysApply: false
 ---
